@@ -16,7 +16,7 @@ const client = mqtt.connect(connectUrl, {
   password: '',
   reconnectPeriod: 1000,
 })
-const topic = 'gustavo.oliveira07022000@gmail.com/T1'
+const topic = ''
 
 const port = new SerialPort({ path: 'COM3', baudRate: 115200});
 const parser = port.pipe(new ReadlineParser({ delimiter: '\r\n' }))
